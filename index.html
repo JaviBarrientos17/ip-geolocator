@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/location.png" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
     />
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
     <title>IP Geolocator</title>
   </head>
   <body>
     <main class="container">
+      <h1 class="h1Title">IP Geolocator</h1>
       <form id="form">
         <label>
           User IP
-          <input type="text" id="input" placeholder="Write here your IP" required/>
+          <input
+            type="text"
+            id="input"
+            placeholder="Write here your IP"
+            pattern="\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}\b"
+            required
+          />
           <small>By default 54.85.132.205</small>
         </label>
         <button type="submit" id="submit">Search data about this IP</button>
@@ -25,6 +33,7 @@
       <div>
         <pre id="results"></pre>
       </div>
+      <footer class="footer">Created by Javi Barrientos</footer>
     </main>
   </body>
 </html>

@@ -6,13 +6,16 @@ const options = {
   },
 };
 
-const fetchIpInfo = (ip) => {
-  return fetch(
-    `https://ip-geolocation-and-threat-detection.p.rapidapi.com/${ip}`,
-    options
-  )
-    .then((response) => response.json())
-    .catch((err) => console.error(err));
+const fetchIpInfo = async (ip) => {
+  try {
+    const response = await fetch(
+      `https://ip-geolocation-and-threat-detection.p.rapidapi.com/${ip}`,
+      options
+    );
+    return await response.json();
+  } catch (err) {
+    return console.error(err);
+  }
 };
 
 const $ = (selector) => document.querySelector(selector);
