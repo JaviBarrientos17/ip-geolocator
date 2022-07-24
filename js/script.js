@@ -36,7 +36,12 @@ form.addEventListener("submit", async (e) => {
   if (ipInfo) {
     results.innerHTML = JSON.stringify(ipInfo, null, 2);
   }
-  
+
   submit.removeAttribute("disabled", "");
   submit.removeAttribute("aria-busy", "true");
 });
+
+function openInNewTab(url) {
+  var win = window.open(url, "_blank");
+  win.focus();
+}
