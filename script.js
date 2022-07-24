@@ -8,9 +8,35 @@ const options = {
 
 const fetchIpInfo = (ip) => {
   fetch(
-    "https://ip-geolocation-and-threat-detection.p.rapidapi.com/${ip}",
+    `https://ip-geolocation-and-threat-detection.p.rapidapi.com/${ip}`,
     options
   )
     .then((response) => response.json())
-    .catch((err) => console.error(err));
+    .catch(err => console.error(err));
 };
+
+const $ = selector => document.querySelector(selector);
+
+const form = $("#form");
+const input = $("#input");
+const submit = $("#submit");
+const results = $("#results");
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const {value} = input;
+    if(!value) return;
+
+    submit.setAttribute('disabled', '');
+    submit.setAttribute('aria-busy', 'true');
+
+    const ipInfo = fetchIpInfo(value);
+
+    if (ipInfo) {
+        // TODO - See why does not render the IP information
+        results.innerHTML = JSON.stringify(ipInfo, null, 2);
+    }
+
+    submit.removeAttribute('disabled', '');
+    submit.removeAttribute('aria-busy', 'true');
+})
