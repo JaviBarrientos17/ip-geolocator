@@ -2,12 +2,18 @@
 
 ### <img src="/assets/en.png"  style="width: 4%" alt="en" title="en">
 
-Simple IP Geolocator coded with HTML & JS, using the <a href="https://rapidapi.com/ipregistry3-ipregistry/api/ip-geolocation-and-threat-detection/">"IP Geolocation and Threat Detection API"</a> from RapidAPI.
+<p style="text-align: justify;">
+    Simple IP Geolocator coded with HTML & JS, using the <a href="https://rapidapi.com/ipregistry3-ipregistry/api/ip-geolocation-and-threat-detection/">"IP Geolocation and Threat Detection API"</a> from RapidAPI.
 
-Coded by Javi Barrientos
+    Coded by Javi Barrientos
+
+</p>
 
 ### <img src="/assets/es.png" style="width: 4%" alt="es" title="es">
 
-Geolocalizador de IP's programado con HTML & JS, usando la <a href="https://rapidapi.com/ipregistry3-ipregistry/api/ip-geolocation-and-threat-detection/">"IP Geolocation and Threat Detection API"</a> de RapidAPI.
+<p style="text-align: justify">
+    Geolocalizador de IP's programado con HTML & JS, usando la <a href="https://rapidapi.com/ipregistry3-ipregistry/api/ip-geolocation-and-threat-detection/">"IP Geolocation and Threat Detection API"</a> de RapidAPI.
 
-Programado por Javi Barrientos
+    Programado por Javi Barrientos
+
+</p>
