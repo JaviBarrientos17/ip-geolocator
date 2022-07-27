@@ -6,12 +6,12 @@
     Simple IP Geolocator coded with HTML & JS, using the <a href="https://rapidapi.com/ipregistry3-ipregistry/api/ip-geolocation-and-threat-detection/">"IP Geolocation and Threat Detection API"</a> from RapidAPI.
 </p>
 
-<p style="text-align: center;">Coded by Javi Barrientos</p>
+Coded by Javi Barrientos
 
 ### <img src="/assets/es.png" style="width: 4%" alt="es" title="es">
 
-<p style="text-align: justify;">
+<p style="text-align: justify">
     Geolocalizador de IP's programado con HTML & JS, usando la <a href="https://rapidapi.com/ipregistry3-ipregistry/api/ip-geolocation-and-threat-detection/">"IP Geolocation and Threat Detection API"</a> de RapidAPI.
 </p>
 
-<p style="text-align: center;">Programado por Javi Barrientos</p>
+Programado por Javi Barrientos
